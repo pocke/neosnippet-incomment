@@ -1,0 +1,2 @@
+neosnippet-modeline
+===================

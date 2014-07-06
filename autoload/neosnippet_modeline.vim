@@ -3,7 +3,7 @@ function! neosnippet_modeline#snippet()
 
 
   let colon = ': '      " for escape modeline
-  let modeline = pair[0] . ' vim: set ' . '${1}' . colon . pair[1]
+  let modeline = pair[0] . ' vim: set ' . '${1:foldmethod=marker}' . colon . pair[1]
 
   return modeline
 endfunction

@@ -1,7 +1,9 @@
 function! neosnippet_modeline#snippet()
   let pair = s:comment_pair()
 
-  let modeline = pair[0] . ' vim: set ' . '${1}' . ': ' . pair[1]
+
+  let colon = ': '      " for escape modeline
+  let modeline = pair[0] . ' vim: set ' . '${1}' . colon . pair[1]
 
   return modeline
 endfunction

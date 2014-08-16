@@ -1,4 +1,4 @@
-neosnippet-modeline
+neosnippet-incomment
 ===================
 
 TODO

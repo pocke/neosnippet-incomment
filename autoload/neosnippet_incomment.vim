@@ -1,4 +1,4 @@
-function! neosnippet_modeline#snippet()
+function! neosnippet_incomment#modeline()
   let pair = s:comment_pair()
 
 

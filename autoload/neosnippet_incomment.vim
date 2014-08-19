@@ -35,3 +35,6 @@ let s:modeline = s:esc . 'm: set ${1:foldmethod=marker}: '
 call s:define_snip('modeline', s:modeline)
 unlet s:esc
 unlet s:modeline
+
+call s:define_snip('todo', ' TODO: ')
+call s:define_snip('xxx', ' XXX: ')

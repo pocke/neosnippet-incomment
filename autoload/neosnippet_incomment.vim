@@ -1,5 +1,6 @@
 function! neosnippet_incomment#call(name)
-  return s:snippets[a:name]
+  let pair = s:comment_pair()
+  return pair[0] . s:snippets[a:name] . pair[1]
 endfunction
 
 
@@ -10,10 +11,7 @@ let s:snippets = {}
 
 
 function! s:define_snip(name, content)
-  let pair = s:comment_pair()
-  let snip = pair[0] . a:content . pair[1]
-
-  let s:snippets[a:name] = snip
+  let s:snippets[a:name] = a:content
 endfunction
 
 

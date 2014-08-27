@@ -34,5 +34,5 @@ call s:define_snip('modeline', s:modeline)
 unlet s:esc
 unlet s:modeline
 
-call s:define_snip('todo', ' TODO: ')
-call s:define_snip('xxx', ' XXX: ')
+call s:define_snip('todo', ' TODO: ${1} ')
+call s:define_snip('xxx', ' XXX: ${1} ')
